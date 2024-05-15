@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body, header, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+body {
+	background-color: lightgray;
+	display: block;
+	margin: 1% 1% 15%;
+	padding: 1%;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
+h1 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-align: center;
+}
+
+
+.row {
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+

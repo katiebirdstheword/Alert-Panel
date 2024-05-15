@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+" rel="stylesheet">
+
+<title>Information</title>
+</head>
+
+<body>
+	<div class="container">
+
+	</div>
+	<nav>
+	<a href="index.html">Alert Panel</a>
+	<a href="success.html">Success</a>
+	<a href="information.html">Information</a>
+	<a href="warning.html">Warning</a>
+	<a href="danger.html">Danger</a>
+	</nav>
+	<h1>Information Alerts</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-12"><div id="skip"></div></div>	
+			<div class="col-12"><div id="save"></div></div>	
+			<div class="col-12"><div id="back"></div></div>	
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4"><button id="skipButton" class="btn btn-info"> Skip</button></div>
+			<div class="col-4"><button id="saveButton" class="btn btn-info">Save</button></div>
+			<div class="col-4"><button id="backButton" class="btn btn-info">Back</button></div>
+		</div>
+	</div>
+	<footer>
+	<p>Author:Katherine Robbins</p>
+	</footer>
+	<script>
+	const skip = document.getElementById("skip"); 
+	const save = document.getElementById("save"); 
+	const back = document.getElementById("back"); 
+	const skipButton = document.getElementById("skipButton"); 
+	const saveButton = document.getElementById("saveButton"); 
+	const backButton = document.getElementById("backButton"); 
+	
+	skipButton.addEventListener("click", function(){ skip.innerHTML = '<div class="alert alert-info" role="alert">You have skipped this section.</div>' });
+	saveButton.addEventListener("click", function(){ save.innerHTML = '<div class="alert alert-info" role="alert">This section has been saved. </div>' });
+	backButton.addEventListener("click", function(){ back.innerHTML = '<div class="alert alert-info" role="alert">You have returned to the previous section.</div>' });
+</script>
+</body>
+</html>
